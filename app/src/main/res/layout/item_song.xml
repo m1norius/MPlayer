@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/id_txt_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_toStartOf="@+id/id_txt_song_duration"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/song"
+        android:textColor="@color/grayOnBlackBackground" />
+
+    <TextView
+        android:id="@+id/id_txt_song_duration"
+        android:text="Duration"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/grayOnBlackBackground"
+        tools:text="Duration" />
+
+</RelativeLayout>

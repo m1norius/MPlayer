@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.minorius.makakaplayer.modul.artist.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_marginBottom="4dp"
+        android:background="@color/titleArtistUp"
+        android:id="@+id/id_frame_title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:lines="1"
+            android:id="@+id/id_txt_artist_text"
+            android:textColor="@color/whiteOnRedBackground"
+            android:textSize="24sp"
+            android:text="@string/makaka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/id_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/id_null_line"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/id_frame_title">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/id_null_line"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:background="@color/grayOnBlackBackground"
+        android:layout_above="@+id/id_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2dp">
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:layout_above="@+id/id_txt_current_song"
+        android:id="@+id/id_seek_bar"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <TextView
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textAlignment="center"
+        android:layout_margin="8dp"
+        android:textColor="@color/grayOnBlackBackground"
+        tools:text="Song"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/id_txt_current_song"
+        android:layout_above="@+id/id_layout_null_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/id_layout_null_navigation"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:background="@drawable/ic_prev_btn"
+                android:id="@+id/id_btn_prev"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:background="@drawable/ic_pause_btn"
+                android:id="@+id/id_btn_pause"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:background="@drawable/ic_next_btn"
+                android:id="@+id/id_btn_next"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

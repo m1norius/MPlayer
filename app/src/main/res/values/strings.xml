@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MakakaPlayer</string>
+    <string name="artist">Artist</string>
+    <string name="song">song</string>
+    <string name="makaka">Makaka#Player</string>
+</resources>
